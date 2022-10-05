@@ -88,6 +88,6 @@ After generate you have:
 
 ## Contact:
 
-    If you have any problem, please contact me: manhduongvtt@gmail.com
+    If you have any problem, please contact me: infisdev@gmail.com
     
     
