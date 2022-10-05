@@ -1,26 +1,29 @@
-apply plugin: 'com.android.library'
-apply from: 'autodimension.gradle'
-//apply plugin: 'maven'
-//apply plugin: 'signing'
+apply plugin: "com.android.library"
+apply from: "autodimension.gradle"
+//apply plugin: "maven"
+//apply plugin: "signing"
 
 buildscript {
     repositories {
-        jcenter()
+        google()
         mavenCentral()
+        maven {
+            url = "https://jitpack.io"
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath "com.android.tools.build:gradle:7.3.0"
     }
 }
 
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 33
     buildToolsVersion "25.0.0"
 
     defaultConfig {
         minSdkVersion 13
-        targetSdkVersion 23
+        targetSdkVersion 33
     }
 }
 
@@ -40,27 +43,27 @@ android {
 //                    password: sonatypePassword)
 //        }
 //
-//        pom.groupId = 'com.intuit.sdp'
-//        pom.artifactId = 'sdp-android'
-//        pom.version = '1.0.3'
+//        pom.groupId = "com.intuit.sdp"
+//        pom.artifactId = "sdp-android"
+//        pom.version = "1.0.3"
 //
 //        pom.project {
-//            name 'sdp'
-//            packaging 'aar'
-//            description 'A scalable size unit for Andorid'
-//            url 'https://github.com/intuit/sdp'
+//            name "sdp"
+//            packaging "aar"
+//            description "A scalable size unit for Andorid"
+//            url "https://github.com/intuit/sdp"
 //
 //            scm {
-//                url 'https://github.com/intuit/sdp'
-//                connection 'scm:git@github.com:intuit/sdp.git'
-//                developerConnection 'scm:git@github.com:intuit/sdp.git'
+//                url "https://github.com/intuit/sdp"
+//                connection "scm:git@github.com:intuit/sdp.git"
+//                developerConnection "scm:git@github.com:intuit/sdp.git"
 //            }
 //
 //            licenses {
 //                license {
-//                    name 'The MIT License (MIT)'
-//                    url 'https://github.com/intuit/sdp/blob/master/LICENSE'
-//                    distribution 'repo'
+//                    name "The MIT License (MIT)"
+//                    url "https://github.com/intuit/sdp/blob/master/LICENSE"
+//                    distribution "repo"
 //                }
 //            }
 //
